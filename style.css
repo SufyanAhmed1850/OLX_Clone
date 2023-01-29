@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page_width{
+    width: 70%;
+    margin: auto;
+}
+.logo{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    padding: .5em 15%;
+    width: 100%;
+}
+.olx{
+    width: 2.2em;
+}
+.olx img{
+    width: 100%;
+}
+.logo .logo_links{
+    display: flex;
+    cursor: pointer;
+}
+.logo i{
+    padding-right: .5em;
+}
+.logo p:hover, .logo i:hover{
+    color: rgb(58, 137, 255);
+}
+.logo p{
+    font-size: .9em;
+    font-family: sans-serif;
+    padding-left: 2.5em;
+}
+.navbar{
+    font-size: .95em;
+    position: fixed;
+    top: 34px;
+    left: 0;
+    width: 100%;
+    padding: 0 14%;
+    z-index: 1;
+}
+.navpic img{
+    width: 4em;
+    margin: 0 20px;
+}
+.location{
+    width: 300px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+.search{
+    background-color: #fff;
+}
+.find{
+    width: 650px;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-left: 15px;
+}
+.search1{
+    background-color: #2f4f4f;
+    margin: 0;
+}
+.link li{
+    list-style-type: none;
+    text-decoration: underline;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+.sell{
+    background-image: url(./Sell.svg);
+    background-repeat: no-repeat;
+    padding: 0;
+}
+.sell p{
+    padding: 10px 0 0 25px;
+    font-weight: bold;
+}
+.nav_bottom{
+    padding: .3em 14%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 58px;
+    background-color: #fff;
+    border: 1px solid #f5f5f5;
+}
+.arches img{
+    width: 100%;
+    margin: 180px 0 0 0;
+    cursor: pointer;
+}
+.heading{
+    font-size: 25px;
+    margin-top: 1.8em;
+    line-height: 2;
+}
+.card_wrapper{
+    cursor: pointer;
+    display: grid;
+    gap: .5em;
+    grid-template-columns: repeat(auto-fit, minmax(216px, 1fr));
+}
+.card_wrapper img{
+    height: 10em;
+    background-color: rgb(32, 32, 32);
+    object-fit: contain;
+}
+.card-title{
+    font-weight: 400;
+    font-size: 1em;
+}
+.card-text{
+    font-size: 1.25em;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.829);
+}
+.load{
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+}
+.load button{
+    background-color: white;
+    font-weight: bold;
+    padding: .5em;
+    border-radius: .25em;
+}
+.bottom{
+    align-items: center;
+    width: 100%;
+    padding: 0 13% 0 15%;
+    margin-top: 1.5em;
+    background-color: rgba(0,47,52,.03);
+}
+.google{
+    display: flex;
+    padding-top: 20px;
+}
+.google h6{
+    padding-top: 20px;
+}
+.google img{
+    width: 30%;
+}
+.content p{
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.list {
+    background-color: #ebeeef;
+    font-size: .8em;
+    padding: 1.25em 6% 5em 14%;
+    cursor: pointer;
+    margin: 0;
+}
+.list p{
+    color: #808080;
+    font-weight: 400;
+    line-height: .5;
+}
+.footer {
+    font-size: .77em;
+    background-color: #002f34;
+    padding: 1em 15% .1em 15%;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width : 1000px) {
+    .sell {
+        background-image: url(./Sell.svg);
+        background-repeat: no-repeat;
+        height: 50px;
+        width: 20%;
+        margin: 10px 0 0 10px;
+        padding: 0;
+    }
+    .all {
+        position: absolute;
+        margin-top: 150px;
+        background-color: #fff;
+        border: 1px solid #f5f5f5;
+        padding-top: 5px;
+    }
+    .arches img {
+        width: 100%;
+        height: 170px;
+        margin: 300px 0 0 px;
+        cursor: pointer;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .logo {
+        width: 95%;
+    }
+    .navbar {
+        width: 95%;
+    }
+    .find {
+        width: 650px;
+        height: 40px;
+        font-size: 18px;
+        font-weight: bold;
+        border: 1px solid #000;
+        border-radius: 8px;
+        margin: 10px 0 0 15px;
+    }
+    .search1 {
+        background-color: #2f4f4f;
+        margin: 0;
+    }
+    
+}
